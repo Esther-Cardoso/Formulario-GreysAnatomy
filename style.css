@@ -12,7 +12,6 @@
 body {
   background: var(--bg-color);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
 }
 
 label {
@@ -77,12 +76,11 @@ p {
 }
 
 .form-nome label, .form-sobrenome label, .email label {
-  display: block;
   margin: 10px 0;
-  font-size: 1rem;
 }
 
 .form-nome input, .form-sobrenome input, .email input {
+  color: rgb(63, 62, 62);
   padding: 10px;
   font-size: 1rem;
   outline: none;
@@ -102,7 +100,7 @@ p {
   margin-bottom: 40px; 
 }
 
-/* form-personagens ------------- */
+/* form-personagens, text area e button------------- */
 .form-personagens {
   display: grid;
   grid-template-columns: auto 1fr auto 1fr;
@@ -123,6 +121,7 @@ p {
 }
 
 .form-msg textarea {
+  color: rgb(63, 62, 62);
   width: 400px;
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
