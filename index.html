@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário - Grey's Anatomy</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./icone.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -16,78 +17,84 @@
       <p>Esse é um formulário relacionado a série grey's anatomy.</p>
     </div>
 
-    <form action="./">
-      <div class="form-nome-completo">
-        <div class="form-nome">
+    <section class="contato-formulario" aria-label="Formulário">
+      <form class="form" action="./">
+        <div>
           <label for="nome">Nome</label>
-          <input type="text" name="nome" id="nome" required>
+          <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
         </div>
 
-        <div class="form-sobrenome">
+        <div>
           <label for="sobrenome">Sobrenome</label>
-          <input type="text" name="sobrenome" id="sobrenome">
+          <input type="text" name="sobrenome" id="sobrenome" placeholder="Seu sobrenome">
         </div>
-      </div>
 
-      <div class="email">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
-      </div>
+        <div class="col-2">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required>
+        </div>
 
-      <div class="form-assistiu">
-        <p>Você já assistiu Greys anatomy?</p>
-        <input type="radio" name="assistiu" id="assistiuGreys" value="JaAssistiu">
-        <label for="assistiuGreys">Sim</label>
+        <div class="col-2">
+          <p>Você já assistiu Greys anatomy?</p>
+          <div class="assistir">
+            <div>
+              <input type="radio" name="assistiu" id="assistiuGreys" value="JaAssistiu">
+              <label for="assistiuGreys">Sim</label>
+            </div>
 
-        <input type="radio" name="assistiu" id="naoAssistiu" value="NaoAssistiu">
-        <label for="naoAssistiu">Não</label>
-      </div>
+            <div>
+              <input type="radio" name="assistiu" id="naoAssistiu" value="NaoAssistiu">
+              <label for="naoAssistiu">Não</label>
+            </div>
+          </div>
+        </div>
 
-      <p>Quais seus persongens preferidos?</p>
-      <div class="form-personagens">
+        <div class="col-2 personagens">
+          <p>Quais seus persongens preferidos?</p>
 
-        <input type="checkbox" name="meredith-grey" id="meredith-grey" value="meredith grey">
-        <label for="meredith-grey">Meredith Grey</label>
+          <input type="checkbox" name="meredith-grey" id="meredith-grey" value="meredith grey">
+          <label for="meredith-grey">Meredith Grey</label>
 
-        <input type="checkbox" name="derek-shepherd" id="derek-shepherd" value="derek-shepherd">
-        <label for="derek-shepherd">Derek Shepherd</label>
+          <input type="checkbox" name="derek-shepherd" id="derek-shepherd" value="derek-shepherd">
+          <label for="derek-shepherd">Derek Shepherd</label>
 
-        <input type="checkbox" name="cristina-yang" id="cristina-yang" value="cristina-yang">
-        <label for="cristina-yang">Cristina Yang</label>
+          <input type="checkbox" name="cristina-yang" id="cristina-yang" value="cristina-yang">
+          <label for="cristina-yang">Cristina Yang</label>
 
-        <input type="checkbox" name="george-omalley" id="george-omalley" value="george-omalley">
-        <label for="george-omalley">George O'malley</label>
+          <input type="checkbox" name="george-omalley" id="george-omalley" value="george-omalley">
+          <label for="george-omalley">George O'malley</label>
 
-        <input type="checkbox" name="izzie-stevens" id="izzie-stevens" value="izzie-stevens">
-        <label for="izzie-stevens">Izzie Stevens</label>
+          <input type="checkbox" name="izzie-stevens" id="izzie-stevens" value="izzie-stevens">
+          <label for="izzie-stevens">Izzie Stevens</label>
 
-        <input type="checkbox" name="miranda-bailey" id="miranda-bailey" value="miranda-bailey">
-        <label for="miranda-bailey">Miranda Bailey</label>
+          <input type="checkbox" name="miranda-bailey" id="miranda-bailey" value="miranda-bailey">
+          <label for="miranda-bailey">Miranda Bailey</label>
 
-        <input type="checkbox" name="callie-torres" id="callie-torres" value="callie-torres">
-        <label for="callie-torres">Callie Torres</label>
+          <input type="checkbox" name="callie-torres" id="callie-torres" value="callie-torres">
+          <label for="callie-torres">Callie Torres</label>
 
-        <input type="checkbox" name="personagens" id="personagens" value="personagens">
-        <label for="personagens">Outros</label>
-      </div>
+          <input type="checkbox" name="personagens" id="personagens" value="personagens">
+          <label for="personagens">Outros</label>
+        </div>
 
-      <div class="form-temporada">
-        <label for="temporadas">Quais suas temporadas preferidas?</label>
-        <select name="temporadas" id="temporadas">
-          <option value="1-5">1 a 5</option>
-          <option value="6-10">6 a 10</option>
-          <option value="11-15">11 a 15</option>
-          <option value="16-18">16 a 18</option>
-        </select>
-      </div>
+        <div class="col-2">
+          <label for="temporadas">Quais suas temporadas preferidas?</label>
+          <select name="temporadas" id="temporadas">
+            <option value="1-5">1 a 5</option>
+            <option value="6-10">6 a 10</option>
+            <option value="11-15">11 a 15</option>
+            <option value="16-18">16 a 18</option>
+          </select>
+        </div>
 
-      <div class="form-msg">
-        <label for="msg">Fale sua opinião sobre a série:</label>
-        <textarea name="msg" id="msg" rows="5"></textarea>
-      </div>
+        <div class="col-2">
+          <label for="msg">Fale sua opinião sobre a série:</label>
+          <textarea name="msg" id="msg" rows="5" placeholder="Sua mensagem"></textarea>
+        </div>
 
-      <button type="submit">Enviar</button>
-    </form>
+        <button class="col-2">Enviar</button>
+      </form>
+    </section>
 
   </div>
 </body>
