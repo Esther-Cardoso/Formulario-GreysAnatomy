@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-<img src="https://media-exp1.licdn.com/dms/image/C4E22AQFHObFzFfZrGA/feedshare-shrink_2048_1536/0/1639569199416?e=1642636800&v=beta&t=SI4OTdLr2sH5g7dl-5bKCXrlb8pbEVAI-ohWDwLZIMw">
+<img src="./form-greys-img.jpg">
 </p>
 <p align="center">
   <a href="https://esther-cardoso.github.io/Formulario-GreysAnatomy/">Clique aqui para abrir o site</a>
